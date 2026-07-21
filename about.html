@@ -15,15 +15,10 @@
   <script>document.documentElement.classList.add('js');</script>
   <style>
     .portrait {
-      width: min(340px, 70vw);
-      aspect-ratio: 1;
-      border-radius: 50%;
-      background: var(--seafoam-wash);
-      border: 1px solid rgba(16, 64, 88, 0.1);
-      overflow: hidden;
+      width: min(360px, 72vw);
       margin: 0 auto;
     }
-    .portrait img { width: 100%; height: 100%; object-fit: cover; }
+    .portrait .frame { background: var(--seafoam-wash); }
   </style>
 </head>
 <body>
@@ -57,8 +52,13 @@
         <h1>Hey friends, I'm Jamie</h1>
         <p class="lede">I'm an intuitive practitioner living in New Orleans. I've been a helper and a channel my whole life; reading tarot and astrology has been my full-time work since the pandemic. I'm an empath and an optimist. I can't help it.</p>
       </div>
-      <div class="portrait reveal">
-        <img src="img/jamie.webp" alt="Jamie Cicatiello smiling, wearing silver earrings" width="1080" height="1080">
+      <div class="portrait reveal has-sparkles">
+        <span class="sparkle" style="width:22px; height:22px; top:-10px; right:14%;" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0l2.6 9.4L24 12l-9.4 2.6L12 24l-2.6-9.4L0 12l9.4-2.6z"/></svg>
+        </span>
+        <div class="frame">
+          <img src="img/jamie.webp" alt="Jamie Cicatiello smiling, wearing silver earrings" width="1080" height="1080">
+        </div>
       </div>
     </div>
   </section>
@@ -66,7 +66,6 @@
   <section class="tint" style="padding-top:clamp(3rem,6vw,4.5rem);">
     <div class="wrap">
       <div class="section-head reveal">
-        <span class="kicker">The story</span>
         <h2>People always came to me with their problems</h2>
       </div>
       <div class="grid-3">
@@ -87,22 +86,26 @@
   </section>
 
   <section>
-    <div class="wrap">
-      <p class="quote reveal">&ldquo;The way that I use cards and astrology and work with Spirit is to help you get to where you would like to be. I don't see it as fortune telling. I see it as themes, energy.&rdquo;</p>
-      <p class="quote-source reveal">Jamie, from her YouTube channel</p>
+    <div class="wrap reveal">
+      <div class="star-rule" style="margin-bottom:2.5rem;" aria-hidden="true">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0l2.6 9.4L24 12l-9.4 2.6L12 24l-2.6-9.4L0 12l9.4-2.6z"/></svg>
+      </div>
+      <p class="pull-quote">&ldquo;The way that I use cards and astrology and work with Spirit is to help you get to where you would like to be. I don't see it as fortune telling. I see it as themes, energy.&rdquo;</p>
+      <p class="quote-source">Jamie, from her YouTube channel</p>
     </div>
   </section>
 
-  <section class="dark on-dark">
+  <section class="dark on-dark starfield">
     <div class="wrap split">
       <div class="reveal">
-        <span class="kicker">Free, every moon</span>
         <h2>Watch before you book</h2>
         <p>I've shared hundreds of free videos: dark moon check-ins, astrology chats, card pulls for the collective, and conversations with healers I admire. It's the easiest way to get a feel for how I read before we ever sit down together.</p>
         <a class="btn btn-primary" href="https://www.youtube.com/channel/UCK5NcDg1lebf5z-HrVMT-Xg">Visit the channel</a>
       </div>
       <div class="split-img reveal">
-        <img src="img/seasons-in-ritual-art.webp" alt="Hand-drawn Seasons in Ritual banner with magnolia, snowflake, planet, and shell" width="1400" height="788" loading="lazy">
+        <div class="frame">
+          <img src="img/seasons-in-ritual-art.webp" alt="Hand-drawn Seasons in Ritual banner with magnolia, snowflake, planet, and shell" width="1400" height="788" loading="lazy">
+        </div>
       </div>
     </div>
   </section>
@@ -120,6 +123,7 @@
 
 <footer class="site-footer">
   <div class="wrap">
+    <p class="footer-wordmark">Independence St. <span class="fw-tail">NOLA</span></p>
     <div class="footer-grid">
       <div>
         <img class="footer-logo" src="img/logo-full.webp" alt="Independence St. Tarot Readings logo" width="110" height="138" loading="lazy">
