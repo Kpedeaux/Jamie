@@ -1,3 +1,7 @@
 # Raw harvest from the old WordPress site (includes unlicensed watermarked
 # AdobeStock previews) — kept locally for reuse, never published.
 original-site-assets/
+
+# Almanac content generators. Kept locally so posts can be regenerated; not
+# published, because Cloudflare Pages would serve them at /_internal/build.py.
+_internal/

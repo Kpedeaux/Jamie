@@ -12,6 +12,24 @@ Copy is written in Jamie's own voice, sourced from her YouTube transcripts.
 - `moon-school.html` — Moon School (Cosmic Softness on Skool) + Seasons in Ritual planner
 - `shop.html` — ritual oils, zodiac burns, planner, gift cards
 - `about.html` — Jamie's story
+- `almanac/` — **The Almanac**, the site's news section (index + one page per dispatch)
+
+## The Almanac
+
+Dated dispatches written in Jamie's voice from her YouTube transcripts, so the site reads as the
+source rather than as a repost. `almanac/index.html` is the listing; each post is a flat file at
+`almanac/<slug>.html`. Every post links back to its original video.
+
+Content is generated from `_internal/` (gitignored, so Cloudflare never serves it): `posts.py` holds
+the article text as data, `build.py` emits the HTML shell, nav, footer, and BlogPosting JSON-LD,
+`make_art.py` draws the hero SVGs. To add a post, add a dict to the top of `POSTS` and run
+`python _internal/build.py`. Editing the generated HTML directly works too, but then the two drift.
+
+Hero art in `img/almanac/<slug>.svg` is generated (`make_art.py`), not photographic: navy sky,
+starfield, and a celestial form matched to the subject. Jamie's actual YouTube thumbnails live at
+`img/almanac/<videoId>.webp` and are used only inside the "watch the original" card at the bottom
+of each post and as the `og:image`, because they are loud clickbait cards and would make the section
+look like a repost if used as hero images.
 
 ## Structure
 
