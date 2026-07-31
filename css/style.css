@@ -43,7 +43,7 @@
   --seafoam: #8bc4c5;
   --seafoam-wash: #e3efec;
   --sand: #e6d2b5;
-  --brass: #a5854e;
+  --brass: #7d6339; /* darkened from #a5854e: small brass labels were 3.1:1 on cream */
   --cta: #19646c;
   --cta-dark: #124e55;
   --text: #23404f;
@@ -337,7 +337,7 @@ section { padding: clamp(4rem, 9vw, 7rem) 0; }
   font-weight: 600;
   letter-spacing: 0.16em;
   text-transform: uppercase;
-  color: var(--brass);
+  color: #7d6339;
   display: block;
 }
 .nav-links {
@@ -598,6 +598,7 @@ section { padding: clamp(4rem, 9vw, 7rem) 0; }
   gap: 2.5rem;
   margin-bottom: 3rem;
 }
+.site-footer h3,
 .site-footer h4 {
   color: var(--cream);
   font-size: 1.05rem;
@@ -836,6 +837,34 @@ html.js .reveal.in { opacity: 1; transform: none; }
 
 .almanac-note {
   font-size: 0.88rem;
-  color: color-mix(in srgb, var(--text) 68%, transparent);
+  color: color-mix(in srgb, var(--text) 82%, transparent);
   max-width: 60ch;
+}
+
+/* ── Accessibility ── */
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+select:focus-visible,
+textarea:focus-visible {
+  outline: 2px solid var(--cta);
+  outline-offset: 2px;
+  box-shadow: 0 0 0 5px rgba(247, 242, 236, 0.9);
+}
+
+.skip-nav {
+  position: absolute;
+  top: -60px;
+  left: 16px;
+  z-index: 999;
+  background: var(--ink);
+  color: var(--cream);
+  padding: 10px 16px;
+  font-size: 14px;
+  border-radius: 4px;
+  transition: top 150ms ease;
+}
+
+.skip-nav:focus {
+  top: 12px;
 }

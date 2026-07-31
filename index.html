@@ -43,6 +43,7 @@
   </script>
 </head>
 <body>
+<a href="#main" class="skip-nav">Skip to main content</a>
 
 <header class="site-header">
   <div class="wrap nav">
@@ -53,6 +54,7 @@
     <button class="nav-toggle" aria-expanded="false" aria-controls="nav-links" aria-label="Open menu">
       <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
     </button>
+    <nav aria-label="Main" style="display:contents">
     <ul class="nav-links" id="nav-links">
       <li><a href="readings.html">Readings</a></li>
       <li><a href="events.html">Private Events</a></li>
@@ -62,10 +64,11 @@
       <li><a href="about.html">About</a></li>
       <li><a class="btn btn-primary" href="readings.html">Book a Reading</a></li>
     </ul>
+    </nav>
   </div>
 </header>
 
-<main>
+<main id="main">
 
   <!-- Hero -->
   <section class="hero">
@@ -188,7 +191,7 @@
       </div>
       <div class="post-grid">
         <article class="post-card reveal">
-          <a class="post-thumb" href="almanac/full-moon-aquarius-what-needs-to-change.html">
+          <a class="post-thumb" tabindex="-1" aria-hidden="true" href="almanac/full-moon-aquarius-what-needs-to-change.html">
             <img src="img/almanac/full-moon-aquarius-what-needs-to-change.svg" alt="" width="1200" height="675" loading="lazy">
           </a>
           <p class="post-meta"><time datetime="2026-07-23">July 23, 2026</time></p>
@@ -196,7 +199,7 @@
           <p>Pluto, Juno, and a christening for the age of Aquarius.</p>
         </article>
         <article class="post-card reveal">
-          <a class="post-thumb" href="almanac/outer-planet-alignment-at-four-degrees.html">
+          <a class="post-thumb" tabindex="-1" aria-hidden="true" href="almanac/outer-planet-alignment-at-four-degrees.html">
             <img src="img/almanac/outer-planet-alignment-at-four-degrees.svg" alt="" width="1200" height="675" loading="lazy">
           </a>
           <p class="post-meta"><time datetime="2026-07-20">July 20, 2026</time></p>
@@ -204,7 +207,7 @@
           <p>Four outer planets at the same degree, and the Emperor's new story.</p>
         </article>
         <article class="post-card reveal">
-          <a class="post-thumb" href="almanac/dark-moon-cancer-mercury-retrograde.html">
+          <a class="post-thumb" tabindex="-1" aria-hidden="true" href="almanac/dark-moon-cancer-mercury-retrograde.html">
             <img src="img/almanac/dark-moon-cancer-mercury-retrograde.svg" alt="" width="1200" height="675" loading="lazy">
           </a>
           <p class="post-meta"><time datetime="2026-07-13">July 13, 2026</time></p>
@@ -299,7 +302,7 @@
         <p>Intuitive guidance, tarot, astrology, and reiki in New Orleans.</p>
       </div>
       <div>
-        <h4>Visit</h4>
+        <h3>Visit</h3>
         <ul>
           <li>1582 Magazine Street</li>
           <li>New Orleans, LA 70130</li>
@@ -308,7 +311,7 @@
         </ul>
       </div>
       <div>
-        <h4>Explore</h4>
+        <h3>Explore</h3>
         <ul>
           <li><a href="readings.html">Book a Reading</a></li>
           <li><a href="events.html">Private Events &amp; Pop-Ups</a></li>
@@ -320,7 +323,7 @@
         </ul>
       </div>
       <div>
-        <h4>Follow</h4>
+        <h3>Follow</h3>
         <ul>
           <li><a href="https://www.youtube.com/channel/UCK5NcDg1lebf5z-HrVMT-Xg">YouTube</a></li>
           <li><a href="https://www.instagram.com/independencestnola/">Instagram</a></li>

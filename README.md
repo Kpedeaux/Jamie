@@ -51,3 +51,9 @@ look like a repost if used as hero images.
 ## Local preview
 
 `python -m http.server 8823 --directory .` (a "jamiesite" entry also exists in ~/.claude/launch.json).
+
+## Before launch (compliance)
+
+- Accessibility pass done 2026-07-31: skip links, focus rings, nav landmark, named/hidden card links (fix lives in `_internal/build.py`, regen after edits).
+- The site collects nothing today (no forms, no analytics), so it needs no privacy policy yet. If analytics or a booking form gets added at launch, add a privacy page and footer link first (copy the pattern from crcoffeenola.com/privacy).
+- A tarot shop is a public accommodation under the ADA, so keep the accessibility bar when editing: run axe on changed pages before shipping.
